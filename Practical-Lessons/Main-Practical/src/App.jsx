@@ -8,17 +8,20 @@ function App() {
     // return <h1 className="title">Hello world from react</h1>
 
     // htmlFor vs. for jsx
-    return (
+    // return (
 
-      <>
-        <label htmlFor="username">Name:</label>
-        <input type="text" id="username"/>
+    //   <>
+    //     <label htmlFor="username">Name:</label>
+    //     <input type="text" id="username"/>
 
-        <label htmlFor="email">Email:</label>
-        <input type="text" id="email"/>
+    //     <label htmlFor="email">Email:</label>
+    //     <input type="text" id="email"/>
 
-      </>
-    )
+    //   </>
+    // )
+
+    // inline styles jsx
+    return <h1 style={ { backgroundColor:"brown", color:"white", padding:"10px", textAlign:"center"} }>Hello world from react</h1>
 }
 
 export default App;
