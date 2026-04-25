@@ -21,7 +21,10 @@ function App() {
     // )
 
     // inline styles jsx
-    return <h1 style={ { backgroundColor:"brown", color:"white", padding:"10px", textAlign:"center"} }>Hello world from react</h1>
+    // return <h1 style={ { backgroundColor:"brown", color:"white", padding:"10px", textAlign:"center"} }>Hello world from react</h1>
+
+    // selfing closing tag jsx
+    return <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1gyjb2rlgHkRZS3lhz81JGvy8Ktpz1b0bQ&s" />
 }
 
 export default App;
