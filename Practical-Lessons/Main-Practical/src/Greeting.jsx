@@ -10,3 +10,10 @@ const Greeting = () => {
 }
 
 export default Greeting;
+
+// naming import component
+export const WelcomeMessage = () => {
+    return (
+        <h1>Welcome to the reac.js</h1>
+    )
+}

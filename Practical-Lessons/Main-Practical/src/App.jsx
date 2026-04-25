@@ -1,4 +1,7 @@
 
+import Greeting, {WelcomeMessage }  from "./Greeting"
+
+
 function App() {
 
     //   first react code jsx
@@ -53,6 +56,14 @@ function App() {
     //     <span>FrontEnd Developer</span>
     //   </>
     // )
+
+    return (
+
+      <>
+      <Greeting />
+      <WelcomeMessage />
+      </>
+    )
 
 
 }
