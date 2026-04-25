@@ -44,7 +44,15 @@ function App() {
     // const students = ["Abdirahim", "Bassam", "React.js",]
     // return ( 
     //   students.map(student => <h1>{student}</h1>)
-    // )  
+    // ) 
+    
+    // fragments
+    // return (
+    //   <>
+    //     <h1>Bassam</h1>
+    //     <span>FrontEnd Developer</span>
+    //   </>
+    // )
 
 
 }
