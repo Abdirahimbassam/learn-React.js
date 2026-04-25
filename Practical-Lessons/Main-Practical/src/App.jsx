@@ -29,9 +29,18 @@ function App() {
      // JavaScript Expressions {} wax jawaab kaso baxaayo/result
     //  return <h1> {5+1} </h1>
 
-    const userName = "Bassam"
+    // const userName = "Bassam"
 
-    return <h1>{userName}</h1>
+    // return <h1>{userName}</h1>
+
+    // conditional statement jsx
+    const password = "1234"
+    // ternary operator
+    return (password === "123" ? "Welcome" : "Go back")
+    // only if condition
+    return (password === "123" && "Welcome")
+
+    
 }
 
 export default App;
