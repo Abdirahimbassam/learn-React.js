@@ -34,13 +34,19 @@ function App() {
     // return <h1>{userName}</h1>
 
     // conditional statement jsx
-    const password = "1234"
-    // ternary operator
-    return (password === "123" ? "Welcome" : "Go back")
-    // only if condition
-    return (password === "123" && "Welcome")
+    // const password = "1234"
+    // // ternary operator
+    // return (password === "123" ? "Welcome" : "Go back")
+    // // only if condition
+    // return (password === "123" && "Welcome")
 
-    
+    // list rendering jsx
+    // const students = ["Abdirahim", "Bassam", "React.js",]
+    // return ( 
+    //   students.map(student => <h1>{student}</h1>)
+    // )  
+
+
 }
 
 export default App;
