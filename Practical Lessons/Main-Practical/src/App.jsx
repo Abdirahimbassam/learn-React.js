@@ -1,5 +1,6 @@
 
-import Greeting, {WelcomeMessage }  from "./Greeting"
+// import Greeting, {WelcomeMessage }  from "./Greeting"
+import Layout from "./Layout";
 
 
 function App() {
@@ -60,8 +61,11 @@ function App() {
     return (
 
       <>
-      <Greeting />
-      <WelcomeMessage />
+      {/* <Greeting />
+      <WelcomeMessage /> */}
+      <Layout />
+
+
       </>
     )
 
