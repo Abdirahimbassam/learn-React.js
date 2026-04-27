@@ -1,24 +1,24 @@
 
-import { useState } from "react";
+// import { useState } from "react";
 
-const Use2 = () => {
+// const Use2 = () => {
 
-    const [ isVisible , setIsVisible ] = useState(true);
+//     const [ isVisible , setIsVisible ] = useState(true);
 
-    const toggle = () => {
-        setIsVisible(!isVisible)
-    }
+//     const toggle = () => {
+//         setIsVisible(!isVisible)
+//     }
 
-    return (
+//     return (
 
-        <>
+//         <>
 
-        <button onClick={toggle}> { isVisible ? "Hide" : "Show" } Message</button>
-        { isVisible &&  <p>This is a toggle Mesage</p> }
+//         <button onClick={toggle}> { isVisible ? "Hide" : "Show" } Message</button>
+//         { isVisible &&  <p>This is a toggle Mesage</p> }
     
-        </>
-    )
+//         </>
+//     )
 
-}
+// }
 
-export default Use2;
+// export default Use2;

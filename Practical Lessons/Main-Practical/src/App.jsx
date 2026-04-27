@@ -3,7 +3,8 @@
 // import Layout from "./Layout";
 // import Prop from "./Prop";
 // import Use from "./Use";
-import Use2 from "./Use2";
+// import Use2 from "./Use2";
+import Use3 from "./Use3";
 
 
 function App() {
@@ -80,7 +81,8 @@ function App() {
 
       {/* <Use /> */}
       
-      <Use2 />
+      {/* <Use2 /> */}
+      <Use3 />
 
 
       </>
