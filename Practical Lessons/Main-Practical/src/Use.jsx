@@ -1,23 +1,23 @@
 
-import { useState } from "react";
+// import { useState } from "react";
 
-const Use = () => {
+// const Use = () => {
 
-    const [ count , setCount ] = useState(0);
+//     const [ count , setCount ] = useState(0);
 
-    const increament = ()=> {
-        setCount(count + 1)
-        console.log(count)
-    }
+//     const increament = ()=> {
+//         setCount(count + 1)
+//         console.log(count)
+//     }
     
-    return (
-        <>
+//     return (
+//         <>
 
-        <p>You clicked {count} times</p>
-        <button onClick={increament}>Click Me</button>
+//         <p>You clicked {count} times</p>
+//         <button onClick={increament}>Click Me</button>
 
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default Use;
+// export default Use;

@@ -2,7 +2,9 @@
 // import Greeting, {WelcomeMessage }  from "./Greeting"
 // import Layout from "./Layout";
 // import Prop from "./Prop";
-import Use from "./Use";
+// import Use from "./Use";
+import Use2 from "./Use2";
+
 
 function App() {
 
@@ -76,7 +78,10 @@ function App() {
       age = {age}
       /> */}
 
-      <Use />
+      {/* <Use /> */}
+      
+      <Use2 />
+
 
       </>
     )
