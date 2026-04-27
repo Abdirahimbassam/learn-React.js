@@ -1,8 +1,8 @@
 
 // import Greeting, {WelcomeMessage }  from "./Greeting"
 // import Layout from "./Layout";
-import Prop from "./Prop";
-
+// import Prop from "./Prop";
+import Use from "./Use";
 
 function App() {
 
@@ -59,9 +59,9 @@ function App() {
     //   </>
     // )
 
-    const currentUser = "Bassam"
-    const role = "Admin"
-    const age = "21"
+    // const currentUser = "Bassam"
+    // const role = "Admin"
+    // const age = "21"
 
     return (
      
@@ -70,12 +70,13 @@ function App() {
       <WelcomeMessage /> */}
       {/* <Layout /> */}
 
-      <Prop 
+      {/* <Prop 
       currentUser = {currentUser} 
       role = {role}
       age = {age}
-      />
+      /> */}
 
+      <Use />
 
       </>
     )
