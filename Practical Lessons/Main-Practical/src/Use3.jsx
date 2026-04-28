@@ -1,25 +1,25 @@
 
-import { useState } from "react";
+// import { useState } from "react";
 
-const Use3 = () => {
+// const Use3 = () => {
 
-    const [ name , setName ] = useState("")
+//     const [ name , setName ] = useState("")
 
-    const handleChange = (event) => {
+//     const handleChange = (event) => {
     
-        setName(event.target.value)
-    }
+//         setName(event.target.value)
+//     }
 
-    return (
+//     return (
 
-        <>
+//         <>
 
-        <input type="text" value={name} onChange={handleChange} placeholder="Enter Your Name" />
-        <p>Hello, {name}</p>
+//         <input type="text" value={name} onChange={handleChange} placeholder="Enter Your Name" />
+//         <p>Hello, {name}</p>
 
-        </>
-    )
+//         </>
+//     )
 
-}
+// }
 
-export default Use3;
+// export default Use3;

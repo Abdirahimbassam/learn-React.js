@@ -4,7 +4,8 @@
 // import Prop from "./Prop";
 // import Use from "./Use";
 // import Use2 from "./Use2";
-import Use3 from "./Use3";
+// import Use3 from "./Use3";
+import ObjectArray from "./ObjectArray";
 
 
 function App() {
@@ -82,7 +83,8 @@ function App() {
       {/* <Use /> */}
       
       {/* <Use2 /> */}
-      <Use3 />
+      {/* <Use3 /> */}
+      < ObjectArray />
 
 
       </>
