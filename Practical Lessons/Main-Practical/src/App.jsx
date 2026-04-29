@@ -5,7 +5,8 @@
 // import Use from "./Use";
 // import Use2 from "./Use2";
 // import Use3 from "./Use3";
-import ObjectArray from "./ObjectArray";
+// import ObjectArray from "./ObjectArray";
+import TodoList from "./TodoList";
 
 
 function App() {
@@ -84,7 +85,9 @@ function App() {
       
       {/* <Use2 /> */}
       {/* <Use3 /> */}
-      < ObjectArray />
+      {/* < ObjectArray /> */}
+      < TodoList />
+
 
 
       </>
