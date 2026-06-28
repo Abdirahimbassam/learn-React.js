@@ -6,7 +6,8 @@
 // import Use2 from "./Use2";
 // import Use3 from "./Use3";
 // import ObjectArray from "./ObjectArray";
-import TodoList from "./TodoList";
+// import TodoList from "./TodoList";
+import LifeCyle from "./LideCyle";
 
 
 function App() {
@@ -86,7 +87,8 @@ function App() {
       {/* <Use2 /> */}
       {/* <Use3 /> */}
       {/* < ObjectArray /> */}
-      < TodoList />
+      {/* < TodoList /> */}
+      <LifeCyle />
 
 
 
