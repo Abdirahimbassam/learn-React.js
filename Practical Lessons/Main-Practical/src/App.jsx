@@ -7,7 +7,8 @@
 // import Use3 from "./Use3";
 // import ObjectArray from "./ObjectArray";
 // import TodoList from "./TodoList";
-import LifeCyle from "./LideCyle";
+// import LifeCyle from "./LideCyle";
+import Resize from "./Resize";
 
 
 function App() {
@@ -88,7 +89,8 @@ function App() {
       {/* <Use3 /> */}
       {/* < ObjectArray /> */}
       {/* < TodoList /> */}
-      <LifeCyle />
+      {/* <LifeCyle /> */}
+      < Resize />
 
 
 
