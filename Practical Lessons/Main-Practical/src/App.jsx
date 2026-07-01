@@ -8,7 +8,8 @@
 // import ObjectArray from "./ObjectArray";
 // import TodoList from "./TodoList";
 // import LifeCyle from "./LideCyle";
-import Resize from "./Resize";
+// import Resize from "./Resize";
+import Timer from "./Timer";
 
 
 function App() {
@@ -73,24 +74,25 @@ function App() {
     return (
      
       <>
-      {/* <Greeting />
-      <WelcomeMessage /> */}
-      {/* <Layout /> */}
+        {/* <Greeting />
+        <WelcomeMessage /> */}
+        {/* <Layout /> */}
 
-      {/* <Prop 
-      currentUser = {currentUser} 
-      role = {role}
-      age = {age}
-      /> */}
+        {/* <Prop 
+        currentUser = {currentUser} 
+        role = {role}
+        age = {age}
+        /> */}
 
-      {/* <Use /> */}
-      
-      {/* <Use2 /> */}
-      {/* <Use3 /> */}
-      {/* < ObjectArray /> */}
-      {/* < TodoList /> */}
-      {/* <LifeCyle /> */}
-      < Resize />
+        {/* <Use /> */}
+        
+        {/* <Use2 /> */}
+        {/* <Use3 /> */}
+        {/* < ObjectArray /> */}
+        {/* < TodoList /> */}
+        {/* <LifeCyle /> */}
+        {/* < Resize /> */}
+        < Timer />
 
 
 
