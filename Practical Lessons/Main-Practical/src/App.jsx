@@ -9,7 +9,8 @@
 // import TodoList from "./TodoList";
 // import LifeCyle from "./LideCyle";
 // import Resize from "./Resize";
-import Timer from "./Timer";
+// import Timer from "./Timer";
+import Fetch from "./Fetch";
 
 
 function App() {
@@ -92,7 +93,8 @@ function App() {
         {/* < TodoList /> */}
         {/* <LifeCyle /> */}
         {/* < Resize /> */}
-        < Timer />
+        {/* < Timer /> */}
+        < Fetch />
 
 
 

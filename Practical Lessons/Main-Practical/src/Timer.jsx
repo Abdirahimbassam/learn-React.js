@@ -1,49 +1,49 @@
 
-import { useState , useEffect } from "react";
+// import { useState , useEffect } from "react";
 
-const Timer = ()=> {
+// const Timer = ()=> {
 
-    const [ time, setTime ] = useState(0)
+//     const [ time, setTime ] = useState(0)
 
-    const [ isRunning , setIsRunning ] = useState(false)
+//     const [ isRunning , setIsRunning ] = useState(false)
 
-    useEffect(()=> {
+//     useEffect(()=> {
 
-        let timerId;
+//         let timerId;
 
-        if(isRunning) {
+//         if(isRunning) {
 
-         timerId = setInterval(()=> {
-                setTime((prev)=> prev + 1)
-            }, 1000)
-        }
+//          timerId = setInterval(()=> {
+//                 setTime((prev)=> prev + 1)
+//             }, 1000)
+//         }
         
-        return () => clearInterval(timerId)
+//         return () => clearInterval(timerId)
         
-    },[isRunning])
+//     },[isRunning])
 
-    const handleStart = ()=> {
-        setIsRunning(true)
-    }
+//     const handleStart = ()=> {
+//         setIsRunning(true)
+//     }
 
-    const handleStop = () => {
-        setIsRunning(false)
-    }
+//     const handleStop = () => {
+//         setIsRunning(false)
+//     }
 
-    const handleReset = () => {
-        setIsRunning(false)
-        setTime(0)
-    }
+//     const handleReset = () => {
+//         setIsRunning(false)
+//         setTime(0)
+//     }
 
-    return (
-       <div>
-            <h2>Stopwatch {time} seconds</h2>
-            <button onClick={handleStart} disabled={isRunning} >Star</button>
-            <button onClick={handleStop} disabled={!isRunning}>Stop</button>
-            <button onClick={handleReset}>Reset</button>
-       </div>
-    )
+//     return (
+//        <div>
+//             <h2>Stopwatch {time} seconds</h2>
+//             <button onClick={handleStart} disabled={isRunning} >Star</button>
+//             <button onClick={handleStop} disabled={!isRunning}>Stop</button>
+//             <button onClick={handleReset}>Reset</button>
+//        </div>
+//     )
 
-}
+// }
 
-export default Timer;
+// export default Timer;
