@@ -10,7 +10,8 @@
 // import LifeCyle from "./LideCyle";
 // import Resize from "./Resize";
 // import Timer from "./Timer";
-import Fetch from "./Fetch";
+// import Fetch from "./Fetch";
+import Render from "./Render";
 
 
 function App() {
@@ -94,7 +95,8 @@ function App() {
         {/* <LifeCyle /> */}
         {/* < Resize /> */}
         {/* < Timer /> */}
-        < Fetch />
+        {/* < Fetch /> */}
+        < Render />
 
 
 

@@ -1,46 +1,46 @@
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-const Fetch = () => {
+// const Fetch = () => {
 
-    const [ user , setUser ] = useState([]);
-    const [ loading , setLoading ] = useState(false)
+//     const [ user , setUser ] = useState([]);
+//     const [ loading , setLoading ] = useState(false)
 
-    useEffect(()=> {
+//     useEffect(()=> {
        
-        const fetchUser = async() => {
+//         const fetchUser = async() => {
             
-           setLoading(true)
+//            setLoading(true)
 
-            try {
-                const response = await fetch ('https://jsonplaceholder.typicode.com/users')    
-                const data = await response.json()
+//             try {
+//                 const response = await fetch ('https://jsonplaceholder.typicode.com/users')    
+//                 const data = await response.json()
                 
-                setUser(data)
-                setLoading(false)
-            } catch (error) {
-                console.error("error", error)
-            }
+//                 setUser(data)
+//                 setLoading(false)
+//             } catch (error) {
+//                 console.error("error", error)
+//             }
 
-        }
+//         }
 
-        fetchUser()
-    },[])
+//         fetchUser()
+//     },[])
 
-   if(loading) return <h1>Loading...</h1>
+//    if(loading) return <h1>Loading...</h1>
 
-    return (
-        <div>
-           <h2>List of Users:</h2>
-           <ul>
-                {
-                    user.map((u)=> (
-                        <li>{u.name}</li>
-                    ))
-                }
-           </ul>
-        </div>
-    )
-}
+//     return (
+//         <div>
+//            <h2>List of Users:</h2>
+//            <ul>
+//                 {
+//                     user.map((u)=> (
+//                         <li>{u.name}</li>
+//                     ))
+//                 }
+//            </ul>
+//         </div>
+//     )
+// }
 
-export default Fetch;
+// export default Fetch;
