@@ -11,7 +11,9 @@
 // import Resize from "./Resize";
 // import Timer from "./Timer";
 // import Fetch from "./Fetch";
-import Render from "./Render";
+// import Render from "./Render";
+// import Conditional from "./Conditional";
+import Notification from "./Notification";
 
 
 function App() {
@@ -96,7 +98,10 @@ function App() {
         {/* < Resize /> */}
         {/* < Timer /> */}
         {/* < Fetch /> */}
-        < Render />
+        {/* < Render /> */}
+        {/* < Conditional /> */}
+        < Notification />
+      
 
 
 

@@ -1,43 +1,43 @@
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
-const Render = ()=> {
+// const Render = ()=> {
 
-    // const items = [];
+//     // const items = [];
 
-    // const myInfo = null;
+//     // const myInfo = null;
 
-    const [ items , setItems ] = useState()
+//     const [ items , setItems ] = useState()
 
-    const [ myInfo , setMyInfo] = useState(null)
+//     const [ myInfo , setMyInfo] = useState(null)
 
-    const [ name , setName ] = useState('')
+//     const [ name , setName ] = useState('')
 
-    const [ isStudent , setIsStudent ] = useState(false)
+//     const [ isStudent , setIsStudent ] = useState(false)
         
-    return (
+//     return (
 
-        <div>
+//         <div>
 
-            {
-                items.length > 0 ? ( 
-                <ul>
-                    {
-                        items.map(item => (
-                            <li key={item}>{item}</li>
-                        ))
-                    }
-                </ul>
-                ) : <p>Items not found</p>
-            }
+//             {
+//                 items.length > 0 ? ( 
+//                 <ul>
+//                     {
+//                         items.map(item => (
+//                             <li key={item}>{item}</li>
+//                         ))
+//                     }
+//                 </ul>
+//                 ) : <p>Items not found</p>
+//             }
 
-            {/* {
-                myInfo ? ( <p>{myInfo.name}</p> ): <p>not info found</p> 
-            }    */}
+//             {/* {
+//                 myInfo ? ( <p>{myInfo.name}</p> ): <p>not info found</p> 
+//             }    */}
 
-        </div>
-    )
+//         </div>
+//     )
 
-}
+// }
 
-export default Render;
+// export default Render;
