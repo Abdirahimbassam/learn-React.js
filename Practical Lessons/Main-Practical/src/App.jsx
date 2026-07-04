@@ -13,7 +13,8 @@
 // import Fetch from "./Fetch";
 // import Render from "./Render";
 // import Conditional from "./Conditional";
-import Notification from "./Notification";
+// import Notification from "./Notification";
+import EventHandling from "./EventHandling";
 
 
 function App() {
@@ -100,7 +101,8 @@ function App() {
         {/* < Fetch /> */}
         {/* < Render /> */}
         {/* < Conditional /> */}
-        < Notification />
+        {/* < Notification /> */}
+        < EventHandling />
       
 
 
