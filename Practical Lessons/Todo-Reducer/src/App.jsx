@@ -1,12 +1,19 @@
 
 // import TodoApp from "./TodoApp";
 
-import UserInfo from "./UserInfo";
+import { GitHub } from "./GitHub";
+import { Post } from "./Post";
+
+// import UserInfo from "./UserInfo";
 
 const App = () => {
 
       return (
-        <UserInfo />
+        <>
+        {/* <UserInfo /> */}
+        <GitHub />
+        <Post />
+        </>
     )
 }
 
