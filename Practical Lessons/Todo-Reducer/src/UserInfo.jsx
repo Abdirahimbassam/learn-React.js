@@ -1,29 +1,18 @@
 
-import { useState } from "react";
-// import { Header } from "./Header";
-// import UserContext from "./UserContext";
-import ThemeContext from "./ThemeContext";
-import { ThemeComponent } from "./ThemeComponent";
 
-const UserInfo = () => {
+// import React from 'react'
+// import { Header } from './Header'
 
-    const [ theme , setTheme ] = useState("light")
-    
-    const toggleTheme = () => {
-        setTheme((prev) => ( prev === "light" ? "dark" : "light" ))
-    }
-    
-    return (
-        <ThemeContext.Provider value={theme}>
-            <button 
-                onClick={toggleTheme}>
-                Swith to {theme === "light" ? "Dark" : "Light"}
-            </button>
+// export const UserInfo = () => {
 
-            <ThemeComponent />
-        </ThemeContext.Provider>
+//     const user = { name: 'MC' , role: 'admin' }
 
-    )
-}
+//     return (
 
-export default UserInfo;
+//         <div>
+//              <h2>My Application Form</h2>
+//             <Header  user={user} />
+//         </div>
+//   )
+
+// }

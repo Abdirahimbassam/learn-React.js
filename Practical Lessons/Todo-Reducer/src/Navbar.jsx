@@ -1,18 +1,18 @@
 
-import { UserProfile } from "./UserProfile"
-import UserContext from "./UserContext"
-import React , { useContext } from "react"
+// import { UserProfile } from "./UserProfile"
+// import UserContext from "./UserContext"
+// import React , { useContext } from "react"
 
-export const Navbar = () => {
+// export const Navbar = () => {
 
-    const user = useContext(UserContext)
+//     const user = useContext(UserContext)
 
-  return (
+//   return (
 
-    <div>
-        <h4>Your {user.role} in Navbar;</h4>
-        <UserProfile/>
-    </div>
+//     <div>
+//         <h4>Your {user.role} in Navbar;</h4>
+//         <UserProfile/>
+//     </div>
 
-  )
-}
+//   )
+// }

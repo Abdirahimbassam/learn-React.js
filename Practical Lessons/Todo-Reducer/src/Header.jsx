@@ -1,15 +1,15 @@
 
 
-import { Navbar } from './Navbar'
+// import { Navbar } from './Navbar'
 
-export const Header = () => {
+// export const Header = () => {
 
-  return (
+//   return (
 
-    <div>
-        <h4>Header;</h4>
-        <Navbar/>
-    </div>
+//     <div>
+//         <h4>Header;</h4>
+//         <Navbar/>
+//     </div>
 
-  )
-}
+//   )
+// }

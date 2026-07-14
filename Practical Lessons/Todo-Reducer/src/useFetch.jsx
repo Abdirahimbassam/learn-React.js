@@ -1,52 +1,52 @@
 
-import { useState , useEffect } from "react";
+// import { useState , useEffect } from "react";
 
-const UseFetch = (url) => {
+// const UseFetch = (url) => {
 
-    const [ data , setData ] = useState(null)
-    const [ loading , setLoading ] = useState(true)
-    const [ error , setError ] = useState(null)
+//     const [ data , setData ] = useState(null)
+//     const [ loading , setLoading ] = useState(true)
+//     const [ error , setError ] = useState(null)
     
-    useEffect(()=> {
+//     useEffect(()=> {
     
-        let isMounted = true;
+//         let isMounted = true;
     
-        const fetchData = async () => {
+//         const fetchData = async () => {
     
-            try {
+//             try {
         
-                const response = await fetch (url)
+//                 const response = await fetch (url)
             
-                if(!response.ok) {
-                    throw new Error (`HTTPS Fetch Error status: ${response.status}`)
-                }
+//                 if(!response.ok) {
+//                     throw new Error (`HTTPS Fetch Error status: ${response.status}`)
+//                 }
                 
-                const result = await response.json()
+//                 const result = await response.json()
             
-                if(isMounted) {
+//                 if(isMounted) {
 
-                    setData(result)
-                    setLoading(false)
-                }
+//                     setData(result)
+//                     setLoading(false)
+//                 }
                     
-            } catch (error) {
+//             } catch (error) {
     
-                    if(isMounted) {
-                        setError(null)
-                        setLoading(false)
-                    }
-                }
-        } 
+//                     if(isMounted) {
+//                         setError(null)
+//                         setLoading(false)
+//                     }
+//                 }
+//         } 
     
-            fetchData();
+//             fetchData();
     
-            return () => {
-                isMounted = false;
-            }
+//             return () => {
+//                 isMounted = false;
+//             }
             
-    },[url])
+//     },[url])
 
-    return { data , loading , error}
-}
+//     return { data , loading , error}
+// }
 
-export default UseFetch;
+// export default UseFetch;
