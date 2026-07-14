@@ -1,0 +1,16 @@
+
+.AppContainer {
+    background-color: blueviolet;
+    color: white;
+}
+
+.headerTitle {
+    background-color: brown;
+    color: white;
+    padding: 12px;
+}
+
+.bio {
+    background-color: black;
+    color: white;
+}
