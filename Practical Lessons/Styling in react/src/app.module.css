@@ -4,8 +4,14 @@
     color: white;
 }
 
-.headerTitle {
+.activeHeaderTitle {
     background-color: brown;
+    color: white;
+    padding: 12px;
+}
+
+.inActiveHeaderTitle {
+    background-color: rgb(50, 165, 42);
     color: white;
     padding: 12px;
 }
@@ -13,4 +19,9 @@
 .bio {
     background-color: black;
     color: white;
+}
+
+.darkMode {
+    background-color: blue;
+    color: black;
 }
