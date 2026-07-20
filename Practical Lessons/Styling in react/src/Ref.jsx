@@ -1,34 +1,60 @@
 
-
-
 import React , {useEffect, useRef, useState} from 'react'
-import './Ref.css'
 
 export const Ref = () => {
 
-    const cardref = useRef()
+    const [ formData , setFormData ] = useState({
+        username: "" ,
+        email: "" ,
+        password: ""
+    })
 
-    const handle = () => {
-        if(cardref.current) {
-            // cardref.current.style = 'background-color:green'
-            cardref.current.classList.toggle ("highlight")
-        }
-    }
+   const handleSubmit = (e) => {
+        e.preventDefault()
+       
+        console.log(formData)
+   }
+
+   const handleChange = (e) => {
+
+    const { name , value } = e.target
 
 
+    setFormData((prevData) => ( { ...prevData , [name] : value } ) )
+     
+   }
 
   return (
 
-    <div className='text-center'>   
+        <form onSubmit={handleSubmit}>
 
-        <div ref={cardref}   className='card'>
-            <h2> Interactive Card </h2>
-            <p> Click the button to toggle the highlight! </p>
+            <input 
+                type="text"
+                name='username'
+                value={formData.name}
+                placeholder='Enter Username' 
+                onChange={handleChange}
+            />
 
-        </div>
-            <button onClick={handle}>Toggle Highlight</button>
-            
-    </div>
+            <input 
+                type="email" 
+                name='email'
+                value={formData.email}
+                placeholder='Enter Email '
+               onChange={handleChange}
+            />
+
+            <input 
+                type="password" 
+                name='password'
+                value={formData.password}
+                placeholder='Enter Password '
+               onChange={handleChange}
+            />
+       
+            <button type='submit'>Submit</button>
+
+        </form>
 
   )
 }
