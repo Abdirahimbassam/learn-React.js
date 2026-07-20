@@ -3,56 +3,52 @@ import React , {useEffect, useRef, useState} from 'react'
 
 export const Ref = () => {
 
-    const [ formData , setFormData ] = useState({
-        username: "" ,
-        email: "" ,
-        password: ""
-    })
+    const [ isChecked ,setIsChecked ] = useState(false) 
+    const [ selectedOptions ,setSelectedOptions ] = useState('') 
 
    const handleSubmit = (e) => {
-        e.preventDefault()
+
+        e.preventDefault();
        
-        console.log(formData)
+        if(!isChecked) {
+            alert("Please check the box")
+            return
+        }
+        console.log(isChecked)
+
+        if(selectedOptions == "") {
+            alert("Please choose an option ")
+            return
+        }
+
+        console.log(selectedOptions)
+
    }
 
-   const handleChange = (e) => {
+   const handleCheckboxChange = (e) => {
 
-    const { name , value } = e.target
-
-
-    setFormData((prevData) => ( { ...prevData , [name] : value } ) )
+    setIsChecked(e.target.checked)
      
    }
 
   return (
 
-        <form onSubmit={handleSubmit}>
-
+        <form onSubmit={handleSubmit} className='space-y-6 mx-auto p-6 m-6 text-center'>
+            <label >Checked: </label>
             <input 
-                type="text"
-                name='username'
-                value={formData.name}
-                placeholder='Enter Username' 
-                onChange={handleChange}
+                type="checkbox"
+                onChange={handleCheckboxChange}
+                checked={isChecked}
             />
-
-            <input 
-                type="email" 
-                name='email'
-                value={formData.email}
-                placeholder='Enter Email '
-               onChange={handleChange}
-            />
-
-            <input 
-                type="password" 
-                name='password'
-                value={formData.password}
-                placeholder='Enter Password '
-               onChange={handleChange}
-            />
-       
-            <button type='submit'>Submit</button>
+            <br />
+            <label >Selected: </label>
+           <select value={selectedOptions} onChange={(e)=> setSelectedOptions(e.target.value)}>
+                <option value="">Selected Options</option>
+                <option value="Options 1"> Options 1 </option>
+                <option value="Options 2"> Options 2 </option>
+           </select>
+            <br/>
+            <button type='submit' className='bg-rose-400 py-2 px-4 text-white'>Submit</button>
 
         </form>
 
