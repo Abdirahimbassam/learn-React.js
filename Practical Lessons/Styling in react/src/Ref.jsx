@@ -2,22 +2,32 @@
 
 
 import React , {useEffect, useRef, useState} from 'react'
+import './Ref.css'
 
 export const Ref = () => {
 
-    const [ count , setCount ] = useState(0)
-    const countPrev = useRef()
+    const cardref = useRef()
 
-    useEffect(()=> {
-        countPrev.current = count
-    },[count])
+    const handle = () => {
+        if(cardref.current) {
+            // cardref.current.style = 'background-color:green'
+            cardref.current.classList.toggle ("highlight")
+        }
+    }
+
+
 
   return (
 
-    <div>
-            <h2>Count: {count} </h2>
-            <h2>PrevCount: {countPrev.current} </h2>
-            <button onClick={()=> setCount(count+1)}>Increament</button>
+    <div className='text-center'>   
+
+        <div ref={cardref}   className='card'>
+            <h2> Interactive Card </h2>
+            <p> Click the button to toggle the highlight! </p>
+
+        </div>
+            <button onClick={handle}>Toggle Highlight</button>
+            
     </div>
 
   )
