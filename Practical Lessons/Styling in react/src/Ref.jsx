@@ -3,49 +3,67 @@ import React , {useEffect, useRef, useState} from 'react'
 
 export const Ref = () => {
 
-    const [ isChecked ,setIsChecked ] = useState(false) 
-    const [ selectedOptions ,setSelectedOptions ] = useState('') 
+    const [ formData ,setFormData ] = useState({
+        name : " ",
+        email : "" ,
+        agreement : false , 
+        country : ""
+    }) 
+   
 
    const handleSubmit = (e) => {
 
-        e.preventDefault();
-       
-        if(!isChecked) {
-            alert("Please check the box")
-            return
-        }
-        console.log(isChecked)
+      e.preventDefault();
 
-        if(selectedOptions == "") {
-            alert("Please choose an option ")
-            return
-        }
-
-        console.log(selectedOptions)
+      console.log(formData)        
 
    }
 
-   const handleCheckboxChange = (e) => {
+   const handleChange = (e) => {
 
-    setIsChecked(e.target.checked)
-     
+    const { name , value , type, checked } = e.target
+    
+    setFormData((prevData) => ({... prevData , [name] : type === "checkbox" ? checked :  value}))  
+
    }
 
   return (
 
         <form onSubmit={handleSubmit} className='space-y-6 mx-auto p-6 m-6 text-center'>
-            <label >Checked: </label>
+            <label >Name: </label>
+            <input
+                className='border-2'
+                type="text"
+                name='name'
+                value={formData.name}
+                onChange={handleChange}
+               
+            />
+            <br />
+            <label >Email: </label>
             <input 
+                className='border-2'
+                type="email"
+                name='email'
+                value={formData.email}
+                onChange={handleChange}
+            />
+            <br />
+            <label >Checked: </label>
+            <input
+                className='border-2'
+                name='agreement'
                 type="checkbox"
-                onChange={handleCheckboxChange}
-                checked={isChecked}
+                checked={formData.agreement}
+                onChange={handleChange}
+                
             />
             <br />
             <label >Selected: </label>
-           <select value={selectedOptions} onChange={(e)=> setSelectedOptions(e.target.value)}>
-                <option value="">Selected Options</option>
-                <option value="Options 1"> Options 1 </option>
-                <option value="Options 2"> Options 2 </option>
+           <select name='country' value={formData.country} onChange={handleChange}  className='border-2'>
+                <option value="">Country</option>
+                <option value="somalia"> Somalia </option>
+                <option value="kenya"> Kenya </option>
            </select>
             <br/>
             <button type='submit' className='bg-rose-400 py-2 px-4 text-white'>Submit</button>
