@@ -1,6 +1,7 @@
 
 // import RecipeCollection from "./RecipeCollection"
-import { Ref } from "./Ref"
+import { Form } from "./Form"
+// import { Ref } from "./Ref"
 
 export const App = () => {
 
@@ -8,7 +9,8 @@ export const App = () => {
 
     <div>
       {/* <RecipeCollection /> */}
-      <Ref />
+      {/* <Ref /> */}
+      <Form />
     </div>
   )
 }
